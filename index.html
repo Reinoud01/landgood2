@@ -17,20 +17,21 @@
     <header class="site-header">
         <div class="container header-inner">
             <div class="logo">
-                <!-- Simple text logo or SVG placeholder -->
-                <span class="logo-text">Landgood</span>
+                <img src="assets/logo.png" alt="Landgood" class="logo-img">
             </div>
             <nav class="main-nav">
                 <ul>
-                    <li><a href="#">Over ons</a></li>
-                    <li><a href="#">Landgoedeigenaren</a></li>
-                    <li><a href="#">Overheid</a></li>
-                    <li><a href="#">Het team</a></li>
-                    <li><a href="#">Blog</a></li>
+
+                    <li><a href="#team">Het team</a></li>
+                    <li><a href="#visie">Onze visie</a></li>
+
+
+                    <li><a href="#">Contact</a></li>
+
                 </ul>
             </nav>
             <div class="header-actions">
-                <a href="#" class="lang-switch">EN</a>
+                <a href="#" class="lang-switch"></a>
                 <button class="mobile-menu-toggle" aria-label="Menu">☰</button>
             </div>
         </div>
@@ -83,9 +84,21 @@
             </div>
         </section>
 
-        <section class="team container">
+        <section id="team" class="team container">
             <div class="farmers-header">
-                <span class="section-label">Met wie heeft u te maken?</span>
+                <div>
+                    <span class="section-label">Met wie heeft u te maken?</span>
+                    <p class="team-description">Landgood heeft een team samengesteld van mensen met elk ervaring op hun
+                        vlak. Onze landschapsarchitect heeft 20 jaar ervaring met het buitengebied, landgoederen, en
+                        zorgwoniningen. De initiatiefnemers zijn zelf betrokken bij een landgoed, en de ontwikkeling
+                        daar van, en weten inmiddels hoe de hazen lopen. We spreken daarnaast uw taal en begrijpen wat
+                        er kan spelen. Dat is wel zo prettig. Daarnaast werken we in Zeeland al geruime tijd met experts
+                        op het gebied van voedselbossen. Voedselbossen die ‘romantisch’ gemaakt kunnen worden, of wat
+                        meer gericht op productie. Beide vallen onder te term ‘agroforestry’, waar we ook een expert uit
+                        Wageningen in ons midden hebben. Voor de eventuele ontwikkeling hebben we ook experts met bouwen
+                        in het buitengebied en begrijpen we wat wel of niet zou kunnen passen. Hoe dan ook houdt u zelf
+                        de regie.</p>
+                </div>
                 <a href="#" class="link-arrow"></a>
             </div>
             <div class="farmers-grid">
@@ -102,7 +115,7 @@
                 <div class="farmer-card">
                     <img src="assets/adriaan.jpg" alt="Adriaan Wisse" class="farmer-img">
                     <h4>Adriaan Wisse</h4>
-                    <p>Agroforestry expert</p>
+                    <p>Agroforestry-expert</p>
                 </div>
                 <div class="farmer-card">
                     <img src="assets/reinoud.jpg" alt="Reinoud ten Cate" class="farmer-img">
@@ -112,7 +125,7 @@
             </div>
         </section>
 
-        <section class="research container">
+        <section id="visie" class="research container">
             <span class="section-label">Onze visie</span>
             <div class="research-content">
                 <div class="research-text">
@@ -128,100 +141,220 @@
                     <img src="assets/vision_exterior.jpg" alt="Buitenaanzicht woningen" class="research-img">
                 </div>
             </div>
-            <a href="#" class="btn-primary">Lees meer over onze beweegredenen</a>
+            <a href="beweegredenen.html" class="btn-primary">Lees meer over onze beweegredenen</a>
         </section>
 
         <section class="stories container">
             <span class="section-label">Wat levert dit uw landgoed op?</span>
             <div class="stories-grid">
                 <div class="story-card">
-                    <div class="placeholder-image story-img">Story 1</div>
+                    <img src="assets/erfpacht.jpg" alt="Erfpacht" class="story-img">
                     <h4>Een structurele inkomstenbron via erfpacht, zonder verkoop van gronden.</h4>
-                    <a href="#" class="btn-pill"></a>
+                    <a href="beweegredenen.html" class="btn-pill">Lees meer</a>
                 </div>
                 <div class="story-card">
-                    <div class="placeholder-image story-img">Story 2</div>
+                    <img src="assets/natuurinclusief_wonen.jpg" alt="Natuurinclusief wonen" class="story-img">
                     <h4>Verbetering van de landschappelijke kwaliteit, door natuurinclusief bouwen, een voedselbos en
                         landschappelijke inpassing</h4>
-                    <a href="#" class="btn-pill"></a>
+                    <a href="beweegredenen.html" class="btn-pill">Lees meer</a>
                 </div>
                 <div class="story-card">
-                    <div class="placeholder-image story-img">Story 3</div>
+                    <img src="assets/samen_werken.jpg" alt="Samen werken" class="story-img">
                     <h4>Meer verbinding met de omgeving, door functies zoals educatie, zorg, natuurbeleving en
                         maatschappelijke betrokkenheid.</h4>
-                    <a href="#" class="btn-pill"></a>
+                    <a href="beweegredenen.html" class="btn-pill">Lees meer</a>
                 </div>
             </div>
-            <a href="#" class="btn-primary">See all articles</a>
+        </section>
+
+        <section class="faq-section container">
+            <span class="section-label">Veelgestelde vragen</span>
+            <div class="faq-container">
+                <details>
+                    <summary>Wat is Landgood? <span class="icon">+</span></summary>
+                    <div class="faq-content">
+                        <p>Landgood helpt landgoedeigenaren door het ontwikkelen van kleinschalige woonclusters in
+                            erfpacht, gericht op ouderen die bewust kiezen voor een natuurlijker leven, zingeving en
+                            gemeenschapszin. Dit gecombineerd met voedselbossen zorgt voor een duurzame inkomstenstroom.
+                        </p>
+                    </div>
+                </details>
+                <details>
+                    <summary>Is dit überhaupt wel mogelijk met mijn landgoed? <span class="icon">+</span></summary>
+                    <div class="faq-content">
+                        <p>Elk landgoed is uniek. Tijdens een vrijblijvend gesprek bekijken we samen de mogelijkheden
+                            voor uw specifieke situatie, rekening houdend met bestemmingsplannen en omgevingsvisie,
+                            ligging en uw wensen als eigenaar.</p>
+                    </div>
+                </details>
+                <details>
+                    <summary>Hoe lang duurt een dergelijk traject? <span class="icon">+</span></summary>
+                    <div class="faq-content">
+                        <p>Een volledig traject duurt gemiddeld 4 tot 10 jaar, afhankelijk van de complexiteit en
+                            bestuurlijke procedures. We begeleiden u stap voor stap door het hele proces. Omdat we de
+                            ervaring hebben dat de processen lang duren, kunnen we maar beter vroeg beginnen. En
+                            aangezien wij dat met relatief lage kosten kunnen doen, is het voor u op dit moment een
+                            kleine stap.</p>
+                    </div>
+                </details>
+                <details>
+                    <summary>Wat kost jullie advies? <span class="icon">+</span></summary>
+                    <div class="faq-content">
+                        <p>Een eerste gesprek is altijd vrijblijvend. Daarna stellen we een voorstel op maat op,
+                            afgestemd op de omvang en complexiteit van uw project. We werken transparant en bespreken
+                            alle kosten vooraf. Maar ga er vanuit dat het in beginsel niet enorme kosten met zich
+                            meebrengt. We stellen een gecombineerde visie (die van uw landgoed icm de visie van
+                            Landgood) op die we toetsten bij de gemeente. Pas als we het idee krijgen dat de gemeente de
+                            visie deelt gaan we volgende stappen zetten.</p>
+                    </div>
+                </details>
+                <details>
+                    <summary>Ik heb al een rentmeester. Zijn jullie niet wat overbodig? <span class="icon">+</span>
+                    </summary>
+                    <div class="faq-content">
+                        <p>Absoluut niet! We werken juist graag samen met uw rentmeester. Wij brengen specifieke
+                            expertise in op het gebied van ontwikkeling, agroforestry en natuurinclusief bouwen, als
+                            aanvulling op de bestaande kennis. Uw rentmeester heeft de meeste lokale kennis en mogelijk
+                            (samen met uw) de juiste contacten bij de gemeente of provincie. Wij kunnen een totaalpakket
+                            bieden, inclusief landschapsarchitect, ontwikkelaar, en groenexpert.</p>
+                    </div>
+                </details>
+                <details>
+                    <summary>Wie komen er op ons landgoed te wonen en hebben we daar geen last van? <span
+                            class="icon">+</span></summary>
+                    <div class="faq-content">
+                        <p>De woningen zijn specifiek bedoeld voor ouderen die bewust kiezen voor een natuurrijke
+                            omgeving, gemeenschapszin en een betekenisvolle levensfase. Door het erfpachtmodel...</p>
+                    </div>
+                </details>
+                <details>
+                    <summary>Wat is een voedselbos? <span class="icon">+</span></summary>
+                    <div class="faq-content">
+                        <p>Een voedselbos is een natuurlijk ecosysteem waarin eetbare gewassen, struiken en bomen samen
+                            groeien. Het bevordert biodiversiteit, verbetert de bodemkwaliteit en biedt tegelijkertijd
+                            oogst en educatieve waarde. Iets waar gemeentes over het algemeen enthousiast van worden, en
+                            het is ook een zeer welkome en aantrekkelijke aanvulling op uw landgoed. Het is daarnaast
+                            noorzakelijk om het stuk rood voor elkaar te krijgen.</p>
+                    </div>
+                </details>
+                <details>
+                    <summary>Over hoe veel woningen hebben we het? <span class="icon">+</span></summary>
+                    <div class="faq-content">
+                        <p>We denken aan kleinschalige clusters van 15 tot 20 woningen/appartementen per locatie. De
+                            exacte omvang bepalen we samen op basis van de draagkracht van uw landgoed en uw wensen als
+                            eigenaar.</p>
+                    </div>
+                </details>
+                <details>
+                    <summary>Wat kan dit ons landgoed opleveren? <span class="icon">+</span></summary>
+                    <div class="faq-content">
+                        <p>Met deze woningen kan erfpacht worden verdiend, wat over het algemeen hoger is dan pacht op
+                            agrarische gronden. Het is altijd een afweging tussen initiële verkoopprijs, en erfpacht.
+                            Dat is een samenspel tussen ontwikkelaar en grondeigenaar.</p>
+                    </div>
+                </details>
+            </div>
         </section>
 
         <section class="support-banner">
             <div class="organic-divider-top"></div>
             <div class="container">
-                <h2>Proudly supporting farmers since 2020, we are transforming agriculture from the ground up.</h2>
+                <h2>Samen werken aan een toekomst met perspectief.</h2>
             </div>
             <div class="organic-divider-bottom"></div>
         </section>
 
         <section class="cta-section container">
             <div class="cta-content">
-                <h3>Join the movement to support farmers and restore our planet.</h3>
-                <p>Whether you are a farmer, a business or an individual, there is a role for you to play.</p>
+                <h3>Wat kunnen we voor u betekenen?</h3>
+                <p>Plannen zoals deze vallen of staan bij goedkeuring van de gemeente. Ook al sluit onze zienswijze aan
+                    bij de (omgevings-)visie van de gemeente, nog steeds is er veel voor nodig om echte stappen te
+                    maken. Denk aan trajecten van 5-10 jaar. Maar juist daarom kunnen we maar beter vroeg beginnen. Met
+                    geduld en de juiste stappen kunnen we tot een succes komen.</p>
+
+                <p>Maar allereerst willen we horen wat uw beweegredenen zijn, en wat uw kaders zijn. Het begint dus
+                    allemaal met een gesprek, wat geheel vrijblijvend is. Als we denken dat we een match zijn, dan
+                    kunnen we besluiten om een visie te ontwikkelen die aansluit bij uw beweegredenen en kaders, en waar
+                    we tevens van denken dat deze visie kans van slagen heeft bij de gemeente.</p>
+
+                <p>Om een opening te krijgen bij de gemeente en provincie zullen we in eerste instantie een visie
+                    willen presenteren. Naast dat we de visie laten aansluiten op het landgoed zelf, laten we deze ook
+                    aansluiten op de omgevingsvisie van de gemeente. Waar is lokaal behoefte aan en kunnen we hier een
+                    invullen aan geven en past dit nog binnen uw eigen kaders? Waarom wil het landgoed dit en waarom
+                    vinden wij het nodig? Welke maatschappelijke problemen lossen we op met ons plan? We laten een
+                    holistische visie zien, waar we rekening houden met waterhuishouding, bossen en landschapselementen,
+                    landbouw, gebouwen, economische behoeften en ontwikkelingen, en beleving en recreatie. Met een
+                    ambitiekaart geven we aan waar de ambities liggen.</p>
+
+                <p>Als er een opening komt bij de gemeente wordt het tijd voor een plan, waarbij we alle mogelijke
+                    experts om de tafel gaan om en gedegen plan op te stellen.</p>
                 <div class="cta-buttons">
-                    <a href="#" class="btn-primary">Join the community</a>
-                    <a href="#" class="btn-primary">Get involved</a>
+                    <a href="#contact" class="btn-primary">Join the community</a>
+
                 </div>
             </div>
             <div class="cta-image">
-                <div class="placeholder-image cta-img">Cows in field</div>
+                <img src="assets/wat_kunnen_we_betekenen.png" alt="Mensen aan het werk in het groen" class="cta-img">
             </div>
+        </section>
+
+        <section id="contact" class="contact-section container">
+            <div class="contact-header">
+                <h2>Hebben we uw interesse gewekt?</h2>
+                <p>Neem contact met ons op.</p>
+            </div>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">UW NAAM</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-MAILADRES</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">TELEFOONNUMMER</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="question">UW VRAAG</label>
+                    <textarea id="question" name="question" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn-outline-dark">VERSTUUR</button>
+            </form>
         </section>
     </main>
 
     <footer class="site-footer">
-        <div class="container footer-inner">
-            <div class="footer-logo">
-                <span class="logo-text-white">CLIMATE FARMERS</span>
-            </div>
+        <div class="container">
             <div class="footer-links-grid">
                 <div class="footer-col">
-                    <h4>For Farmers</h4>
+                    <img src="assets/logo.png" alt="Landgood Logo" class="logo-img">
+                </div>
+                <div class="footer-col">
+                    <h4>Over ons</h4>
                     <ul>
-                        <li><a href="#">Transition Finance</a></li>
-                        <li><a href="#">Academy</a></li>
+                        <li><a href="index.html#visie">Onze visie</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>About us</h4>
+                    <h4>Contact</h4>
                     <ul>
-                        <li><a href="#">Team</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="mailto:info@landgood.nl">info@landgood.nl</a></li>
+                        <li><a href="tel:+31612345678">+31 6 55778766</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Partners</h4>
+                    <h4>Volg ons</h4>
                     <ul>
-                        <li><a href="#">Businesses</a></li>
-                        <li><a href="#">Institutions</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+
                     </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Resources</h4>
-                    <ul>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Press</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <div class="socials">
-                    <!-- Social icons placeholders -->
-                    <span>IG</span> <span>LI</span> <span>TW</span>
                 </div>
             </div>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
