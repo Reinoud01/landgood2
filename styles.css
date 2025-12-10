@@ -533,39 +533,44 @@ ul {
 .faq-container {
     max-width: 900px;
     margin: 0;
-    /* Align left, do not center */
 }
 
 details {
-    border-bottom: 1px solid #b0c4de;
-    /* Light blue-grey divider */
-    margin-bottom: 0;
-    /* Remove margin to stack borders cleanly if needed, or keep for spacing */
-    padding: var(--spacing-md) 0;
-    /* More vertical padding */
+    background-color: #fcfdf5;
+    /* Light cream */
+    border-radius: 50px;
+    margin-bottom: 1rem;
+    padding: 1.5rem 2rem;
+    border: none;
+    transition: all 0.3s ease;
 }
 
-/* Remove border from the last item if desired, or keep it for consistency. 
-   The image shows lines between items. */
-details:last-child {
-    border-bottom: 1px solid #b0c4de;
+details[open] {
+    border-radius: 30px;
+    /* Slightly less rounded when open to accommodate content? Or keep 50px */
+    /* Let's keep 30px or 40px for better look with text block, or just 50px if it fits. 
+       The image shows the closed state is very round (pill). 
+       The open state image shows rounded corners but maybe less extreme? 
+       Actually, looking at the open image, it looks like a card with rounded corners. 
+       Let's stick to a consistent radius or slightly adjust. 
+       Let's try 30px for open to give more space for text corners. */
+    border-radius: 30px;
 }
 
 summary {
     cursor: pointer;
-    font-family: var(--font-heading);
-    /* Playfair Display */
-    font-weight: 500;
-    /* Bold but not too heavy */
-    font-size: 1.5rem;
-    /* Larger text */
-    line-height: 1.3;
+    font-family: 'Inter', sans-serif;
+    /* Match design */
+    font-weight: 600;
+    font-size: 1.1rem;
+    line-height: 1.4;
     list-style: none;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    /* Align icon to top if text wraps */
+    align-items: center;
     color: var(--color-text-main);
+    padding-right: 0.5rem;
+    /* Space for icon */
 }
 
 summary::-webkit-details-marker {
@@ -573,26 +578,52 @@ summary::-webkit-details-marker {
 }
 
 summary .icon {
-    font-size: 1.5rem;
-    font-weight: 400;
-    margin-left: var(--spacing-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #dcefa0;
+    /* Lime green */
     flex-shrink: 0;
-    /* Prevent icon from shrinking */
-    transition: transform 0.3s ease;
+    margin-left: 1rem;
+    font-size: 0;
+    /* Hide text content */
+    transition: background-color 0.3s ease;
+}
+
+summary .icon::after {
+    content: "+";
+    font-size: 1.5rem;
+    color: #1a4a3b;
+    /* Dark green text for contrast? Or black. Image shows dark. */
+    font-weight: 400;
+    line-height: 1;
 }
 
 details[open] summary .icon {
-    transform: rotate(45deg);
+    background-color: #1a4a3b;
+    /* Dark green */
+    transform: none;
+    /* No rotation needed as we swap content */
+}
+
+details[open] summary .icon::after {
+    content: "-";
+    color: #fff;
+    /* White text */
+    position: relative;
+    top: -2px;
+    /* Visual adjustment */
 }
 
 .faq-content {
-    padding-top: var(--spacing-sm);
-    padding-bottom: var(--spacing-sm);
+    padding-top: 1rem;
     color: #555;
     line-height: 1.6;
     font-size: 1rem;
-    max-width: 90%;
-    /* Keep content slightly narrower than title */
+    max-width: 95%;
 }
 
 /* Contact Form */
