@@ -788,7 +788,29 @@ details[open] summary .icon::after {
     color: var(--color-green-dark);
 }
 
-.reason-card.highlight p {
-    color: var(--color-text-main);
-    font-weight: 500;
+
+@media (max-width: 768px) {
+    .cta-section {
+        padding: 15px;
+        /* Reduced padding for mobile */
+    }
+
+    .cta-hidden-content {
+        display: none;
+    }
+
+    .read-more-trigger {
+        display: inline-block;
+        text-decoration: underline;
+        cursor: pointer;
+        color: var(--color-text-main);
+        font-weight: 600;
+        margin-top: 0.5rem;
+    }
+}
+
+@media (min-width: 769px) {
+    .read-more-trigger {
+        display: none;
+    }
 }

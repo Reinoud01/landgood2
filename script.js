@@ -20,4 +20,19 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+
+    // Read More functionality for CTA section
+    const readMoreBtn = document.querySelector('.read-more-trigger');
+    const hiddenContent = document.querySelectorAll('.cta-hidden-content');
+
+    if (readMoreBtn) {
+        readMoreBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            hiddenContent.forEach(el => {
+                el.style.display = 'inline'; // Or block depending on element
+                if (el.tagName === 'P') el.style.display = 'block';
+            });
+            readMoreBtn.style.display = 'none';
+        });
+    }
 });
