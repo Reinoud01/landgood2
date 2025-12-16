@@ -795,6 +795,10 @@ details[open] summary .icon::after {
         /* Reduced padding for mobile */
     }
 
+    .cta-content p {
+        margin-bottom: 1.5rem;
+    }
+
     .cta-hidden-content {
         display: none;
     }
@@ -806,6 +810,7 @@ details[open] summary .icon::after {
         color: var(--color-text-main);
         font-weight: 600;
         margin-top: 0.5rem;
+        margin-bottom: 2rem;
     }
 }
 
