@@ -8,5 +8,16 @@ document.addEventListener('DOMContentLoaded', () => {
             // Optional: Animate hamburger icon to 'X'
             mobileMenuToggle.textContent = mainNav.classList.contains('active') ? '✕' : '☰';
         });
+
+        // Close menu when a link is clicked
+        const navLinks = mainNav.querySelectorAll('a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (mainNav.classList.contains('active')) {
+                    mainNav.classList.remove('active');
+                    mobileMenuToggle.textContent = '☰';
+                }
+            });
+        });
     }
 });
