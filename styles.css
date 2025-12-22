@@ -385,6 +385,10 @@ ul {
     margin-top: 1.5rem;
 }
 
+.research-text p {
+    margin-bottom: 1.5rem;
+}
+
 .research {
     margin-bottom: var(--spacing-xl);
 }
