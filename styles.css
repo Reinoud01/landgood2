@@ -41,6 +41,8 @@ h4 {
     font-weight: 400;
     line-height: 1.2;
     margin-bottom: var(--spacing-sm);
+    text-wrap: balance;
+    /* Improve heading wrapping */
 }
 
 h1 {
@@ -72,10 +74,12 @@ ul {
 }
 
 .container {
-    width: 90%;
+    width: 100%;
+    /* Full width for better centering control */
     max-width: var(--container-width);
     margin: 0 auto;
-    padding: 0 var(--spacing-sm);
+    padding: 0 1.5rem;
+    /* Symmetric padding */
 }
 
 .section-label {
