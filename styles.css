@@ -43,6 +43,10 @@ h4 {
     margin-bottom: var(--spacing-sm);
     text-wrap: balance;
     /* Improve heading wrapping */
+    word-wrap: break-word;
+    /* Ensure long words break */
+    hyphens: auto;
+    /* Enable hyphenation */
 }
 
 h1 {
@@ -57,7 +61,15 @@ h1 {
 }
 
 h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    /* Reduced base size for mobile */
+}
+
+@media (min-width: 400px) {
+    h2 {
+        font-size: 2.5rem;
+        /* Restoration for larger mobile/desktop */
+    }
 }
 
 h3 {
