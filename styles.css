@@ -582,7 +582,7 @@ ul {
     }
 
     .site-header.header-transparent .main-nav ul li a {
-        color: var(--color-white);
+        color: var(--color-text-main);
         font-weight: 500;
     }
 
