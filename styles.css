@@ -237,6 +237,12 @@ ul {
     display: flex;
     /* Fix alignment */
     align-items: center;
+    transform: translateY(-4px);
+    /* Move up to align with logo */
+}
+
+.lang-switch {
+    display: none;
 }
 
 /* Mobile Menu Styles */
