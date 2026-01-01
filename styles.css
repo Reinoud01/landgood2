@@ -204,8 +204,8 @@ ul {
 }
 
 .logo-img {
-    height: 96px;
-    /* 3x larger (was 32px) */
+    height: 32px;
+    /* Adjusted for better visibility */
     width: auto;
     /* Maintain aspect ratio */
     display: block;
@@ -213,8 +213,9 @@ ul {
 
 @media (min-width: 768px) {
     .logo-img {
-        height: auto;
-        width: 300px;
+        height: 40px;
+        /* 5x smaller than 200px */
+        width: auto;
         max-width: none;
         /* Remove width constraint */
     }
