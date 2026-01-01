@@ -213,9 +213,8 @@ ul {
 
 @media (min-width: 768px) {
     .logo-img {
-        height: 40px;
-        /* 5x smaller than 200px */
-        width: auto;
+        height: auto;
+        width: 400px;
         max-width: none;
         /* Remove width constraint */
     }
