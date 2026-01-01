@@ -214,7 +214,7 @@ ul {
 @media (min-width: 768px) {
     .logo-img {
         height: auto;
-        width: 400px;
+        width: 200px;
         max-width: none;
         /* Remove width constraint */
     }
