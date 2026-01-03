@@ -179,7 +179,7 @@ ul {
 }
 
 .site-header.header-transparent .logo-img {
-    filter: brightness(0) invert(1);
+    filter: none;
 }
 
 .site-header.header-transparent .mobile-menu-toggle {
@@ -209,6 +209,8 @@ ul {
     width: auto;
     /* Maintain aspect ratio */
     display: block;
+    filter: brightness(0);
+    /* Make white logo black for default header */
 }
 
 @media (min-width: 768px) {
