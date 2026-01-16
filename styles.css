@@ -330,6 +330,11 @@ ul {
     .hero h1 {
         font-size: 3.5rem;
     }
+
+    .hero-content {
+        margin-top: -10vh;
+        /* Move text higher on desktop */
+    }
 }
 
 /* Removed separate hero-img as it is now background */
