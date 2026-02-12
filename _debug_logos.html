@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 20px;
+        }
+
+        .logo-container {
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            display: inline-block;
+        }
+
+        .bg-white {
+            background-color: white;
+        }
+
+        .bg-black {
+            background-color: black;
+            color: white;
+        }
+
+        img {
+            max-height: 100px;
+            display: block;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Logo Debug</h1>
+
+    <div class="logo-container bg-white">
+        <h3>logo.png (on white)</h3>
+        <img src="assets/logo.png">
+    </div>
+    <div class="logo-container bg-black">
+        <h3>logo.png (on black)</h3>
+        <img src="assets/logo.png">
+    </div>
+    <br>
+
+    <div class="logo-container bg-white">
+        <h3>logo.png (inverted)</h3>
+        <img src="assets/logo.png" style="filter: invert(1);">
+    </div>
+    <div class="logo-container bg-white">
+        <h3>logo.png (brightness 0)</h3>
+        <img src="assets/logo.png" style="filter: brightness(0);">
+    </div>
+    <div class="logo-container bg-black">
+        <h3>logo_raw.png (on black)</h3>
+        <img src="assets/logo_raw.png">
+    </div>
+    <br>
+
+    <div class="logo-container bg-white">
+        <h3>logo.jpg (on white)</h3>
+        <img src="assets/logo.jpg">
+    </div>
+</body>
+
+</html>
