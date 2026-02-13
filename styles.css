@@ -692,12 +692,6 @@ ul {
     margin-bottom: var(--spacing-xl);
 }
 
-.sdg-section h2 {
-    margin-bottom: var(--spacing-md);
-    color: var(--color-green-dark);
-    text-align: left;
-}
-
 .sdg-logos {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
@@ -712,10 +706,6 @@ ul {
 }
 
 @media (min-width: 768px) {
-    .sdg-section h2 {
-        font-size: 2.5rem;
-    }
-
     .sdg-logos {
         grid-template-columns: repeat(5, 1fr);
         gap: 2rem;
