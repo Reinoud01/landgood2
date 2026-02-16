@@ -689,14 +689,18 @@ ul {
 
 /* SDG Section */
 .sdg-section {
-    margin-bottom: var(--spacing-xl);
+    margin-bottom: var(--spacing-lg);
+    display: flex;
+    justify-content: center;
 }
 
 .sdg-logos {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
     gap: 0.75rem;
-    max-width: 400px;
+    max-width: 300px;
+    /* Adjusted to fit 5 small logos compactly on mobile */
+    margin: 0 auto;
 }
 
 .sdg-logo {
@@ -709,6 +713,8 @@ ul {
     .sdg-logos {
         grid-template-columns: repeat(5, 1fr);
         gap: 2rem;
+        max-width: 600px;
+        /* Increased for desktop */
     }
 }
 
