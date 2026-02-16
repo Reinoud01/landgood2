@@ -586,6 +586,16 @@ ul {
     /* Make logo white */
     margin-left: 0;
     /* Ensure left alignment */
+    width: 91px;
+    height: 32px;
+    object-fit: contain;
+}
+
+@media (min-width: 768px) {
+    .site-footer .logo-img {
+        width: 112px;
+        height: 39px;
+    }
 }
 
 .footer-links-grid {
